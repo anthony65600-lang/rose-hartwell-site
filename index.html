@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rose Hartwell - Author</title>
+<meta name="description" content="Rose Hartwell writes practical, large-print log books and trackers for health, home and everyday life.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <img src="assets/logo.png" alt="Rose Hartwell logo">
+      <span>ROSE HARTWELL</span>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#books">Books</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="about">
+  <div class="container">
+    <img class="logo" src="assets/logo.png" alt="Rose Hartwell">
+    <h1>Rose Hartwell</h1>
+    <p class="tagline">Practical log books & trackers</p>
+    <p class="bio">
+      Rose Hartwell writes practical, easy-to-use log books and trackers designed to make
+      everyday health and home record-keeping simple. Every book is built around large print,
+      clear tables, and real information people actually need - whether that's tracking blood
+      pressure at home, keeping a car's full service history, or organizing a family's medical
+      visits. Rose believes good tools should get out of your way: no clutter, no complicated
+      systems, just a clear place to write things down.
+    </p>
+    <a class="cta" href="#books">Browse the Books</a>
+  </div>
+</section>
+
+<section class="books-section" id="books">
+  <div class="container">
+    <h2>The Collection</h2>
+    <p class="subhead"><span id="book-count">0</span> books and counting</p>
+
+    <div class="controls">
+      <div id="category-filters"></div>
+      <input type="search" id="book-search" placeholder="Search by title...">
+    </div>
+
+    <div class="books-grid" id="books-grid"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    &copy; <span id="year"></span> Rose Hartwell. All books available on Amazon.
+  </div>
+</footer>
+
+<script src="js/books-data.js"></script>
+<script src="js/render.js"></script>
+</body>
+</html>
