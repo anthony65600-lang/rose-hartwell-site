@@ -7,10 +7,13 @@ function bookCard(book) {
   const subtitleHtml = book.subtitle
     ? `<p class="book-subtitle">${book.subtitle}</p>`
     : "";
+  const coverHtml = book.cover
+    ? `<img src="${book.cover}" alt="${book.title} cover" loading="lazy">`
+    : `<span>${book.title.split(" ").map(w => w[0]).slice(0, 2).join("")}</span>`;
   return `
     <article class="book-card" data-category="${book.category}" data-title="${book.title.toLowerCase()}">
       <div class="book-cover" aria-hidden="true">
-        <span>${book.title.split(" ").map(w => w[0]).slice(0, 2).join("")}</span>
+        ${coverHtml}
       </div>
       <div class="book-info">
         <h3>${book.title}</h3>
